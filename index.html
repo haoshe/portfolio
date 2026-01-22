@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hao | Developer Portfolio</title>
+    <style>
+        /* --- GLOBAL STYLES --- */
+        :root {
+            --bg-color: #0f172a;       /* Dark Navy Background */
+            --card-bg: #1e293b;        /* Lighter Navy for cards */
+            --text-main: #f8fafc;      /* White-ish text */
+            --text-muted: #94a3b8;     /* Grey text */
+            --accent: #38bdf8;         /* Light Blue Accent */
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        a { text-decoration: none; color: inherit; transition: 0.3s; }
+        ul { list-style: none; padding: 0; }
+
+        /* --- LAYOUT --- */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        /* --- HERO SECTION --- */
+        header {
+            padding: 4rem 0;
+        }
+        h1 { font-size: 3rem; margin-bottom: 0.5rem; letter-spacing: -1px; }
+        .tagline { color: var(--accent); font-size: 1.2rem; font-weight: 500; }
+        .intro { color: var(--text-muted); max-width: 500px; margin-top: 1rem; }
+
+        /* --- PROJECTS GRID --- */
+        .section-title {
+            border-bottom: 1px solid #334155;
+            padding-bottom: 0.5rem;
+            margin-bottom: 2rem;
+            margin-top: 4rem;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--text-muted);
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            padding: 1.5rem;
+            border-radius: 8px;
+            border: 1px solid rgba(255,255,255,0.05);
+            transition: transform 0.2s, border-color 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: var(--accent);
+        }
+
+        .card h3 { margin-top: 0; }
+        .card p { color: var(--text-muted); font-size: 0.9rem; }
+        .tech-stack {
+            font-size: 0.75rem;
+            color: var(--accent);
+            margin-top: 1rem;
+            display: block;
+        }
+
+        /* --- FOOTER --- */
+        footer {
+            margin-top: 5rem;
+            padding-top: 2rem;
+            border-top: 1px solid #334155;
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+        .social-links a { margin: 0 10px; }
+        .social-links a:hover { color: var(--accent); }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Hi, I'm Hao.</h1>
+            <div class="tagline">Computer Science Student at Trinity College Dublin</div>
+            <p class="intro">
+                Passionate about backend development and building intelligent web tools. 
+                Recently, I led a group project to build an <strong>AI Study Tutor</strong>, 
+                leveraging the OpenAI API to help students learn faster.
+            </p>
+        </header>
+
+        <section>
+            <div class="section-title">Selected Projects</div>
+            
+            <div class="grid">
+                
+                <a href="https://shooting-game-zsoi.onrender.com" target="_blank" class="card">
+                    <h3>Shooting Game</h3>
+                    <p>A high-performance arcade shooter built with HTML5 Canvas and Object-Oriented Programming. Features a custom particle physics engine for explosions, real-time collision detection using trigonometry, and efficient rendering loops.</p>
+                    <span class="tech-stack">JavaScript • HTML5 Canvas</span>
+                </a>
+
+                <a href="https://simon-game-2gfh.onrender.com" target="_blank" class="card">
+                    <h3>The Simon Game</h3>
+                    <p>A classic memory game built to demonstrate DOM manipulation and game logic logic.</p>
+                    <span class="tech-stack">JavaScript • HTML5 • CSS3</span>
+                </a>
+
+            </div>
+        </section>
+
+        <footer>
+            <div class="social-links">
+                <a href="https://github.com/haoshe" target="_blank">GitHub</a>
+                <a href="https://linkedin.com/in/hao-she" target="_blank">LinkedIn</a>
+                <a href="mailto:hshe@tcd.ie">Email</a>
+            </div>
+            <p>&copy; 2026 Hao. Built on Render.</p>
+        </footer>
+    </div>
+
+</body>
+</html>
