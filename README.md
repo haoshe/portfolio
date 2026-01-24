@@ -6,7 +6,7 @@ A minimalist, responsive portfolio website built to showcase my software enginee
 
 ## Live Demo
 
-**[https://hao-portfolio.onrender.com]**
+**[View Live Site](https://hao-portfolio.onrender.com)**
 
 ## Tech Stack
 
